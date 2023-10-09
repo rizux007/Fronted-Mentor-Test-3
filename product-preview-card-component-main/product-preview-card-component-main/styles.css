@@ -1,0 +1,160 @@
+:root
+{
+    --dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+}
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: Fraunces; */
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cream);
+}
+
+.product-card
+{
+    display: flex;
+    width: 720px; /* Taille du carré */
+    height: 550px; /* Taille du carré */
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.product-card .left-card
+{
+    width: 50%;
+    height: 100%;
+}
+
+.product-card .left-card img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    filter: contrast(120%);
+
+}
+
+.product-card .right-card
+{
+   display: flex;
+   justify-content: center;
+   padding-left: 50px;
+   padding-right: 50px;
+   align-items: left;
+   flex-direction: column;
+   gap: .5rem;
+   width: 50%;
+   /* border: 3px solid green; */   
+   height: 100%;
+}
+
+
+.product-card .right-card .Summury h2
+{
+    opacity: .5;
+    text-transform: uppercase;
+    font-family: 'arial';
+    font-weight: 100;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+.product-card .right-card .content .sentence{
+    text-transform: capitalize;
+    font-family: 'Fraunces';
+    font-size: 35px;
+    line-height: 0.99;
+    margin-bottom: 30px;
+    margin-top:7%;
+    font-weight: bold;
+
+}
+
+
+.product-card .right-card .content .information {
+    /* font-style: italic; */
+    font-size: 18px;
+    opacity: .5;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    /* letter-spacing: 1.1px; */
+}
+
+
+.product-card .right-card .content
+{
+    display: block;
+}
+
+
+.price
+{
+    display: flex;
+    /* border: 2px solid   darkblue; */
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.first
+{
+    font-family: 'Fraunces';
+    color: var(--dark-cyan);
+    margin-right: 20px;
+    font-size: 35px;
+
+}
+
+
+.second
+{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+
+.button 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.button button
+{
+    padding: 20px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    background-color:var(--dark-cyan) ;
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.button button:hover
+{
+    background-color:rgb(2, 63, 2) ;
+}
